@@ -1,0 +1,33 @@
+grid-container {
+  display: grid;
+  column-gap: 10px
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  padding: 4%;
+}
+grid-item {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+}
+
+.grid-item {
+
+  background-color: rgba(255,255,255,0.3);
+
+  flex: 0 0 45%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}

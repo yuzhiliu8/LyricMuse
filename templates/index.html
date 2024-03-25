@@ -1,0 +1,124 @@
+  <!DOCTYPE html>
+<html>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel = "stylesheet" href = './static/css/button.css'>
+    <link rel = "stylesheet" href = './static/css/margin.css'>
+    <link rel = "stylesheet" href = './static/css/grid.css'>
+    <link rel = "stylesheet" href = './static/css/header.css'>
+    <link rel = "stylesheet" href = './static/css/image.css'>
+    <link rel = "stylesheet" href = './static/css/navigationBar.css'>
+    <link rel="stylesheet" href='./static/css/footer.css'>
+    <link rel="stylesheet" href='./static/css/slider.css'>
+<style>
+  body {
+    min-height: 100vh;
+  }
+</style>
+<body>
+  <!-- HEADER-->
+  <div class = "header">
+    <a href="https://www.ai-camp.org/"><img src = "static/css/aiCamp.png" alt = "AI Camp" class = "ai_camp_logo"></a>
+    <a href="https://www.huggingface.co/yuzhiliu8/Songlyricsgenerator"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="hugging face" class=huggingface_logo></a>
+    <h1>LyricMuse</h1>
+    <p>Song Lyrics Generator</p>
+  </div>
+  <!-- Navigation Bar -->
+  <div class = "navBar">
+    <div class = "navBarGrid">
+      <div class = "navBarGridItem">
+        <form action = "/about" method="GET">
+          <button class = "navBarButton" > 
+            <div class = "navBarText">
+              <h2>About</h2>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class = "navBarGridItem">
+        <form action = '/' method = "GET">
+          <button class = "navBarButton">
+            <div class = "navBarText">
+              <h2>Lyrics Generator</h2>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class = "navBarGridItem">
+        <form action = "/meet_the_team" method="GET">
+          <button class = "navBarButton">
+            <div class = "navBarText">
+              <h2>Meet the Team</h2>
+            </div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-container w3-cursive"> 
+    <div class = "grid-container">
+      <div class = "grid-item">
+        <form action="/generated" method='post'>
+          <label for="predefined">Select an example: </label><br><br>
+          <select style = "background-color:rgb(255,255,255,0);" id="predefined" name="predefined" onchange="updateTextBox(this.value)">
+            <option value="" selected>Example lyrics</option>
+            <option value="This is a test">This is a test</option>
+            <option value="I don't know">I don't know</option>
+            <option value="It's very cool">It's very cool</option>
+          </select>
+          <br><br>
+          <label for="input">Or type your own:</label><br><br>
+          <textarea id="input" name="input" rows='4' cols='20'placeholder="Enter lyrics here..." autofocus>{{input}}</textarea><br>
+
+          <script>
+            function updateSliderValue() {
+              var slider = document.getElementById("mySlider");
+              var sliderValue = document.getElementById("sliderValue");
+              sliderValue.innerHTML = slider.value;
+
+
+              var thumbPosition = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+
+
+              slider.style.setProperty("--thumb-position", thumbPosition);
+
+
+              outputTextArea.setAttribute("maxlength", slider.value);
+            }
+
+          </script>
+
+          <div class="slider-container">
+            <span>Output Length: </span>
+            <span id="sliderValue">50</span>
+          </div>
+
+          <input type="range" id="mySlider" min="20" max="200" step="1"
+            oninput="updateSliderValue()" class="slider"><br><br>
+          <button class="button" type="submit">{{btn}}</button>
+
+          <script>
+            function updateTextBox(value) {
+              document.getElementById("input").value = value;
+            }
+          </script>
+        </form> 
+      </div>
+      <div class = "grid-item">
+        <br>
+        <p>{{tip}}</p>
+        <textarea rows='8' cols='40' readonly=''>{{output}}</textarea>
+      </div>
+    </div> 
+  </div>
+  <br><br><br><br><br>
+  <div class="footer">
+    <p>Project by Andrew, Cyrus, Dakota, Nick, Ryan, and Yuzhi</p>
+  </div>
+
+</body>
+</html>

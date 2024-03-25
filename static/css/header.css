@@ -1,0 +1,16 @@
+.header{
+  padding: 20px;
+  text-align: center;
+  background-color: #1abc9c;
+  background-image: linear-gradient(to right, #267871, #1abc9c );
+  color: white;
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+  .header {
+    text-align: bottom;
+    height: 400px;
+  }
+}
+
+

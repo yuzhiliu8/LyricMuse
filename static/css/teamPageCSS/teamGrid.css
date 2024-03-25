@@ -1,0 +1,16 @@
+.teamGrid{
+  display:grid
+  grid-template-columns: auto auto;
+  background-color:white;
+  padding:10px;
+  border:2px solid black; 
+}
+
+
+.teamGridItem{
+  border: 1px solid black
+  text-align:center;
+  background-color:white;
+  opacity: 0.2;
+  padding:20px;
+}

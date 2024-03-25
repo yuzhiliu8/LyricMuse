@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel = "stylesheet" href = './static/css/button.css'>
+  <link rel = "stylesheet" href = './static/css/margin.css'>
+  <link rel = "stylesheet" href = './static/css/grid.css'>
+  <link rel = "stylesheet" href = './static/css/header.css'>
+  <link rel = "stylesheet" href = './static/css/image.css'>
+  <link rel = "stylesheet" href = './static/css/navigationBar.css'>
+  <link rel = "stylesheet" href = './static/css/slider.css'>
+  <link rel = "stylesheet" href = './static/css/teamPageCSS/teamGrid.css'>
+  <link rel = "stylesheet" href = './static/css/footer.css'>
+
+<head>
+  <title>Team Members</title>
+  <style>
+    .team-list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      flex-basis: calc(33.33% - 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    @media (max-width: 1200px) {
+      .team-member {
+        flex-basis: calc(50% - 20px); /* Adjust the flex-basis value as needed */
+      }
+    }
+    @media (max-width: 600px) {
+      .team-member {
+        flex-basis: calc(100% - 20px); /* Adjust the flex-basis value as needed */
+      }
+    }
+    .team-member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+      margin: 0;
+      font-size: 30px;
+      color: white;
+    }
+    body {
+      min-height: 100vh;
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+      }
+  </style>
+</head>
+<body>
+  <div class = "header">
+    <a href="https://www.ai-camp.org/"><img src = "static/css/aiCamp.png" alt = "AI Camp Logo" class = "ai_camp_logo"></a>
+    <a href="https://www.huggingface.co/yuzhiliu8/Songlyricsgenerator"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="hugging face logo" class=huggingface_logo></a>
+    <h1>LyricMuse</h1>
+    <p>Song Lyrics Generator</p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class = "navBar">
+    <div class = "navBarGrid">
+      <div class = "navBarGridItem">
+        <form action = "/about" method="GET">
+          <button class = "navBarButton" > 
+            <div class = "navBarText">
+              <h2>About</h2>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class = "navBarGridItem">
+        <form action = '/' method = "GET">
+          <button class = "navBarButton">
+            <div class = "navBarText">
+              <h2>Lyrics Generator</h2>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class = "navBarGridItem">
+        <form action = "/meet_the_team" method="GET">
+          <button class = "navBarButton">
+            <div class = "navBarText">
+              <h2>Meet the Team</h2>
+            </div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <br><br><br>
+
+<ul class="team-list">
+    <li class="team-member">
+      <img src="./static/css/teamPageCSS/yuzhiphoto.JPG" alt="Yuzhi Liu">
+      <h3>Yuzhi Liu</h3>
+    </li>
+    <li class="team-member">
+      <img src="./static/css/teamPageCSS/dakotaphoto.jpg" alt="Dakota Dantuono">
+      <h3>Dakota Dantuono</h3>
+    </li>
+    <li class="team-member">
+      <img src="/static/css/teamPageCSS/cyrusphoto.jpg" alt="Cyrus Chung">
+      <h3>Cyrus Chung</h3>
+    </li>
+    <!-- Add more team members here -->
+  <li class="team-member">
+      <img src="static/css/teamPageCSS/nickphoto.jpg" alt="Nick Bown">
+      <h3>Nick Bown</h3>
+    </li>
+    <li class="team-member">
+      <img src="/static/css/teamPageCSS/andrewphoto.jpg" alt="Andrew Atkinson">
+      <h3>Andrew Atkinson</h3>
+    </li>
+    <li class="team-member">
+      <img src="static/css/teamPageCSS/ryanphoto.jpg" alt="Team Member 6">
+      <h3>Ryan McGovern</h3>
+    </li>
+  </ul>
+
+  <br><br><br>
+  <div class="footer">
+    <p>Project by Andrew, Cyrus, Dakota, Nick, Ryan, and Yuzhi</p>
+  </div>
+</body>
+
+</html> 

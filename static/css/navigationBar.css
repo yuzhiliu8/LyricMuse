@@ -1,0 +1,35 @@
+.navBar{
+  text-align: center;
+  background-color: rgb(255, 255, 255,0);
+
+}
+
+
+.navBarGrid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap:1px;
+  background-color: rgb(255, 255, 255,0);
+  align-content:center;
+}
+
+.navBarGridItem {  
+}
+
+.navBarButton{
+  background-color: rgb(255, 255, 255,0);
+  Color: black;
+  border: 0px;
+  width:100%;
+  height:80px;
+  border-radius:5px;
+
+}
+
+.navBarButton:hover{
+  background-color: rgb(211, 211, 211, 0.3)
+}
+
+.navBarText{
+  color:white;
+}

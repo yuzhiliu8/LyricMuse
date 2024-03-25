@@ -1,0 +1,35 @@
+.ai_camp_logo{
+   position: absolute;
+  top: 0px;
+  left:15px;
+  border-radius:50%;
+  width:209px;
+  height:209px;
+  border: 2px solid darkgray; 
+}
+@media (max-width: 800px) {
+  .ai_camp_logo {
+    top:190px;
+    left:15px
+  }
+  
+}
+.huggingface_logo {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width:209px;
+  height:209px;
+}
+@media (max-width: 800px) {
+  .huggingface_logo {
+    top:190px;
+    right:15px
+  }
+}
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FI6ub3ei.jpg&f=1&nofb=1&ipt=27ce498bddf41083076fe563&ipo=images");
+  backdrop-filter: brightness(80%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }

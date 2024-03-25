@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel = "stylesheet" href = './static/css/button.css'>
+  <link rel = "stylesheet" href = './static/css/margin.css'>
+  <link rel = "stylesheet" href = './static/css/grid.css'>
+  <link rel = "stylesheet" href = './static/css/header.css'>
+  <link rel = "stylesheet" href = './static/css/image.css'>
+  <link rel = "stylesheet" href = './static/css/navigationBar.css'>
+  <link rel = "stylesheet" href = './static/css/slider.css'>
+  <link rel = "stylesheet" href = './static/css/footer.css'>
+  <link rel = "stylesheet" href = './static/css/h1.css'>
+  <link rel = "stylesheet" href = './static/css/description-box.css'>
+  <style>
+    body {
+      min-height: 100vh;
+    }
+    @keyframes colorAnimation {
+            0% { color: #ff3366; }
+            25% { color: #ff9933; }
+            50% { color: #ffff66; }
+            75% { color: #66ff66; }
+            100% { color: #3366ff; }
+        }
+
+        .color-changing-text {
+            animation: colorAnimation 5s infinite;
+        }
+  </style>
+
+  <body>
+    <div class = "header">
+      <a href="https://www.ai-camp.org/">
+        <img src = "static/css/aiCamp.png" alt = "AI Camp Logo" class = "ai_camp_logo"></a>
+      <a href="https://www.huggingface.co/yuzhiliu8/Songlyricsgenerator">
+        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="hugging face logo" class=huggingface_logo></a>
+      <h1>LyricMuse</h1>
+      <p>Song Lyrics Generator</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class = "navBar">
+      <div class = "navBarGrid">
+        <div class = "navBarGridItem">
+          <form action = "/about" method="GET">
+            <button class = "navBarButton" > 
+              <div class = "navBarText">
+                <h2>About</h2>
+              </div>
+            </button>
+          </form>
+        </div>
+        <div class = "navBarGridItem">
+          <form action = '/' method = "GET">
+            <button class = "navBarButton">
+              <div class = "navBarText">
+                <h2>Lyrics Generator</h2>
+              </div>
+            </button>
+          </form>
+        </div>
+        <div class = "navBarGridItem">
+          <form action = "/meet_the_team" method="GET">
+            <button class = "navBarButton">
+              <div class = "navBarText">
+                <h2>Meet the Team</h2>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="column">
+      <div class="description-box">
+        <div class="h1">
+      <h1>Welcome to LyricMuse, the ultimate destination for generating song lyrics!</h1>
+        <p font-size:18px;>Here you will find a powerful and innovative tool that harnesses the creative prowess of machine learning to inspire and assist you in your musical endeavors.</p>
+
+        <h2>Our Vision:</h2>
+        <p font-size:18px;>At LyricMuse, we believe in the universal power of music to connect, inspire, and transform lives. Our vision is to empower aspiring musicians, songwriters, and music enthusiasts by providing them with a platform that generates unique and captivating song lyrics effortlessly.</p>
+
+        <h2>How it Works:</h2>
+        <p font-size:18px;>LyricMuse utilizes state-of-the-art machine learning algorithms trained on a diverse dataset of lyrics from four prominent artists. By analyzing patterns, themes, and linguistic structures within the data, our intelligent system generates unique and captivating song lyrics. Whether you're looking for heartfelt ballads, catchy pop tunes, or energetic rap verses, LyricMuse can provide you with a wide range of creative options.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="split-paragraph">
+        <div class="description-box">
+          <p>The <a href="https://www.kaggle.com/datasets/deepshah16/song-lyrics-dataset">dataset</a> we used from Kaggle provides a full list of lyrics from prominent 
+             pop and  hip hop artists. The model is trained using these four artists: Ed Sheeran, 
+             Taylor Swift, Maroon 5, and Coldplay. </p>
+        <h2>Features</h2>
+      <div class="container">
+          <ul>
+    <li>Dynamic Lyrics Generation</li>
+    <li>Artist-Inspired Styles</li>
+    <li>Mood and Genre Exploration</li>
+  </ul>
+  <ul>
+    <li>Customization Options</li>
+    <li>Creative Boost</li>
+    <li>Entertainment</li>
+  </ul>
+      </div>
+
+      <h2>Join the LyricMuse Community:</h2>
+      <p>We invite you to join our vibrant community of musicians, songwriters, and music lovers. Share your creations, collaborate with other artists, and showcase your talent. Together, let's unleash the power of music and lyrics!</p>
+
+      <h2>Contact Us:</h2>
+      <p>If you have any questions, suggestions, or feedback, please don't hesitate to reach out to us. We are dedicated to continuously improving LyricMuse and providing you with the best possible experience.</p>
+
+
+      <h1 class="color-changing-text">Thank you for choosing LyricMuse.</h1>
+        <p class="color-changing-text">Let the lyrics flow and the music soar!</p>
+        <span class="colorful-line"></span>
+        <span class="color-changing-text">♫♪♬</span>
+        <span class="colorful-line"></span>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+
+  <br><br><br>
+  <div class="footer">
+  <p>Project by Andrew, Cyrus, Dakota, Nick, Ryan, and Yuzhi</p>
+  </div>
+
+
+
+  </body>
+
+</html>
