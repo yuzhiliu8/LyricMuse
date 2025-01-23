@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 app = Flask(__name__)
-@app.route('/')
+@app.route('/lyricmuse')
 def main():
   return render_template('index.html', btn='generate', tip='Generated lyrics will appear here:')
 
@@ -22,7 +22,7 @@ def query(payload):
 
 
 
-@app.route('/generated', methods=['POST'])
+@app.route('/lyricmuse-generated', methods=['POST'])
 def index():
   lyrics=request.form['input']
   output = query({
@@ -39,11 +39,11 @@ def index():
     else:
       return render_template('index.html', input=lyrics, output=output[0]['generated_text'].replace('.','\n'), btn='regenerate', tip='Click the "regenerate" button to try again!')
 
-@app.route('/about', methods=['GET'])
+@app.route('/lyricmuse-about', methods=['GET'])
 def about():
   return render_template("about.html")
 
-@app.route('/meet_the_team', methods=['GET'])
+@app.route('/lyricmuse-meet_the_team', methods=['GET'])
 def meet_the_team():
   return render_template("team.html")
 

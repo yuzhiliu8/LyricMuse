@@ -29,7 +29,7 @@
   <div class = "navBar">
     <div class = "navBarGrid">
       <div class = "navBarGridItem">
-        <form action = "/about" method="GET">
+        <form action = "/lyricmuse-about" method="GET">
           <button class = "navBarButton" > 
             <div class = "navBarText">
               <h2>About</h2>
@@ -38,7 +38,7 @@
         </form>
       </div>
       <div class = "navBarGridItem">
-        <form action = '/' method = "GET">
+        <form action = '/lyricmuse' method = "GET">
           <button class = "navBarButton">
             <div class = "navBarText">
               <h2>Lyrics Generator</h2>
@@ -47,7 +47,7 @@
         </form>
       </div>
       <div class = "navBarGridItem">
-        <form action = "/meet_the_team" method="GET">
+        <form action = "/lyricmuse-meet_the_team" method="GET">
           <button class = "navBarButton">
             <div class = "navBarText">
               <h2>Meet the Team</h2>
@@ -62,7 +62,7 @@
   <div class="w3-container w3-cursive"> 
     <div class = "grid-container">
       <div class = "grid-item">
-        <form action="/generated" method='post'>
+        <form action="/lyricmuse-generated" method='post'>
           <label for="predefined">Select an example: </label><br><br>
           <select style = "background-color:rgb(255,255,255,0);" id="predefined" name="predefined" onchange="updateTextBox(this.value)">
             <option value="" selected>Example lyrics</option>
