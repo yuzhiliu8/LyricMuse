@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, session, send_file
 import time
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 app = Flask(__name__)
 @app.route('/')
 def main():
@@ -45,6 +48,7 @@ def meet_the_team():
   return render_template("team.html")
 
 
-app.run(host='0.0.0.0', port=81)
+if __name__ == "__main__":
+  app.run(host='0.0.0.0', port=5000, debug=True)
 
 
